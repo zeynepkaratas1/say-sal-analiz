@@ -1,0 +1,11 @@
+import math
+x=math.pi/5
+ilk=0
+tekterimli= math.cos(ilk)-math.sin(ilk)*(x-ilk) #tek terimli taylor acilimi
+ikiterimli= math.cos(ilk)-math.sin(ilk)*(x-ilk)-math.cos(ilk)*(x-ilk)*(x-ilk/2) #iki terimli taylor acilimi
+#kesme degeri= gercek deger -hesaplanan deger
+ilkkesme=math.cos(x)-tekterimli
+ikincikesme=math.cos(x)-ikiterimli
+
+print("tek terimli kesme degeri:  ",ilkkesme)
+print("iki terimli kesme degeri:  ",ikincikesme)
